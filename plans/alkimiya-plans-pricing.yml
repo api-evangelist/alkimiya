@@ -1,0 +1,30 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.alkimiya.eu/
+docs: https://www.alkimiya.eu/contatti/
+note: >-
+  Alkimiya SRL publishes no pricing page and no plans of any kind. The site navigation
+  (Home / Chi siamo / Soluzioni / Temi / Progetti innovativi / News / Contatti) carries
+  no pricing entry, and neither product page — EBMEDS nor SmartCare — states a price,
+  tier, quota or unit of billing. Both products are sold as enterprise integrations into
+  hospital and regional health systems; the only commercial route published is the
+  contact form at /contatti/ and info@alkimiya.eu. plan_count is an honest zero, not an
+  unread page.
+plan_count: 0
+pointer_emitted: false  # no Plans/RateLimits pointer in apis.yml: this file records a verified absence, not a published surface
+currency: null
+billing_model: contact-sales
+plans: []
+evidence:
+- url: https://www.alkimiya.eu/
+  status: 200
+  finding: no pricing link anywhere in the primary or footer navigation
+- url: https://www.alkimiya.eu/soluzioni/139/
+  status: 200
+  finding: solutions index describes EBMEDS and SmartCare with no commercial terms
+- url: https://www.alkimiya.eu/soluzioni/smartcare/427/
+  status: 200
+  finding: SmartCare page markets an integration API but states no price or plan
+- url: https://www.alkimiya.eu/contatti/
+  status: 200
+  finding: contact form is the only published commercial route

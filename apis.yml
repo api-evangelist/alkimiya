@@ -1,8 +1,20 @@
 aid: alkimiya
 name: Alkimiya
-description: 'Alkimiya is a company surfaced via the API Evangelist harvest backlog (source: openehr-coalition)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Alkimiya SRL is an Italian digital-health startup headquartered in Rome that builds and
+  distributes clinical decision support systems grounded in Evidence Based Medicine. It is
+  the exclusive Italian distributor of EBMEDS, a third-generation CDSS owned by Duodecim
+  Publication Company of Finland carrying more than 1,000 clinical algorithms for drug
+  interaction, contraindication, dosage and medication-reconciliation checking. Alkimiya is
+  also developing SmartCare, its own Digital Clinical Decision Pathway platform for the
+  proactive support of post-discharge and chronic patients, combining an evidence-based
+  knowledge base, a rules engine and an integration API meant to make telemedicine systems
+  and electronic health records act on clinical guidance. Continuum of Care packages the
+  same pathway engine as cloud SaaS with patient-facing mobile apps. The company markets
+  the SmartCare API but publishes no developer portal, reference or machine-readable
+  contract.
 url: https://raw.githubusercontent.com/api-evangelist/alkimiya/refs/heads/main/apis.yml
+image: https://www.alkimiya.eu/assets/images/logo.jpg
 x-type: company
 x-source: harvest:openehr-coalition
 x-tier: stub
@@ -12,6 +24,14 @@ created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Health
+- Healthcare
+- Clinical Decision Support
+- Evidence Based Medicine
+- Digital Health
+- Telemedicine
+- Chronic Care
+- Italy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,3 +41,43 @@ maintainers:
 common:
 - type: Website
   url: https://www.alkimiya.eu/
+- type: About
+  url: https://www.alkimiya.eu/chi-siamo/67/
+- type: Support
+  url: https://www.alkimiya.eu/contatti/
+- type: Blog
+  url: https://www.alkimiya.eu/articoli/news/
+- type: PrivacyPolicy
+  url: https://www.alkimiya.eu/privacy/
+- type: Login
+  url: https://www.alkimiya.eu/login/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/alkimiya
+- type: DomainSecurity
+  url: security/alkimiya-domain-security.yml
+- type: LLMsTxt
+  url: llms/alkimiya-llms.txt
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Alkimiya's SmartCare product page markets an integration API in prose but the company
+    publishes no developer portal, reference or spec anywhere — every contract-discovery
+    path on www.alkimiya.eu 404s, certificate transparency shows no api/dev/docs subdomain
+    exists, and the only published route to the API is the contact form at /contatti/ and
+    info@alkimiya.eu.
+  evidence:
+  - url: https://www.alkimiya.eu/soluzioni/smartcare/427/
+    status: 200
+  - url: https://www.alkimiya.eu/openapi.json
+    status: 404
+  - url: https://www.alkimiya.eu/docs/
+    status: 404
+  - url: https://www.alkimiya.eu/contatti/
+    status: 200
+  checked: '2026-09-02'

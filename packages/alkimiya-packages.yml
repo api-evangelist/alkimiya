@@ -1,0 +1,43 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  Unauthenticated registry searches on 2026-09-02 — registry.npmjs.org search,
+  pypi.org/pypi/alkimiya/json, rubygems.org/api/v1/gems/alkimiya.json,
+  crates.io/api/v1/crates?q=alkimiya, packagist.org/search.json?q=alkimiya — plus a
+  GitHub repository search for "alkimiya".
+note: >-
+  Alkimiya SRL (Rome, alkimiya.eu) publishes no client libraries in any public package
+  registry. Every registry returned zero matching packages. IMPORTANT ATTRIBUTION NOTE:
+  a GitHub organization named "Alkimiya" exists and ships Solidity packages, but it is
+  Alkimiya Protocol (alkimiya.io), an unrelated crypto/consensus-capital-markets project,
+  not this Italian clinical-decision-support company. Nothing from that org is recorded
+  here. No SDKs pointer is emitted in apis.yml because there is no first-party SDK.
+package_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  query: alkimiya
+  status: 200
+  matches: 0
+- registry: pypi
+  query: alkimiya
+  status: 404
+  matches: 0
+- registry: rubygems
+  query: alkimiya
+  status: 404
+  matches: 0
+- registry: crates.io
+  query: alkimiya
+  status: 200
+  matches: 0
+- registry: packagist
+  query: alkimiya
+  status: 200
+  matches: 0
+  finding: only unrelated vendors with similar names (alkimisti/*)
+- registry: github
+  query: alkimiya
+  status: 200
+  matches: 0
+  finding: hits belong to Alkimiya Protocol (alkimiya.io), a different company

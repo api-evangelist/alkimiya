@@ -1,0 +1,25 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.alkimiya.eu/soluzioni/smartcare/427/
+note: >-
+  No rate limits are documented. Alkimiya markets a SmartCare integration API in prose
+  but publishes no developer portal, no API reference and no machine-readable contract,
+  so there is no published limit, window, burst allowance, exhaustion status code or
+  RateLimit-* response header to record. Nothing was observed live either: no API host
+  exists to call (certificate transparency for *.alkimiya.eu lists only cPanel and mail
+  subdomains). limit_count is an honest zero.
+limit_count: 0
+pointer_emitted: false  # no RateLimits pointer in apis.yml: this file records a verified absence, not a published surface
+limits: []
+headers: []
+exhaustion_status: null
+evidence:
+- url: https://www.alkimiya.eu/soluzioni/smartcare/427/
+  status: 200
+  finding: "prose states 'un API in grado di potenziare i sistemi di telemedicina' with no technical detail"
+- url: https://www.alkimiya.eu/docs/
+  status: 404
+  finding: no developer documentation is served
+- url: https://www.alkimiya.eu/api
+  status: 404
+  finding: no API surface on the corporate host
